@@ -1,1 +1,36 @@
-
+name: etl pipeline
+on:
+    push:
+        branches:
+            - main
+jobs:
+    job1:
+        runs-on: ubuntu-latest
+        steps:
+            - name: prints first job
+              run: echo 'run 1 job'
+    job2:
+        runs-on: ubuntu-latest
+        steps:
+            - name: prints second job
+              run: echo 'run 2 job'
+    job3:
+        runs-on: ubuntu-latest
+        steps:
+            - name: prints third job
+              run: echo 'run 3 job'
+    job4:
+        runs-on: ubuntu-latest
+        steps:
+            - name: prints fourth job
+              run: echo 'run 4 job'
+    job5:
+        runs-on: ubuntu-latest
+        steps:
+            - name: prints fifeth job
+              run: echo 'run 5 job'
+    job6:
+        runs-on: ubuntu-latest
+        steps:
+            - name: prints sixth job
+              run: echo 'run 6 job'
